@@ -197,7 +197,7 @@ Top 5 tabelas mais usadas em medidas (sinaliza onde mora a "carne" do modelo).
 
 **Tom**: PT-BR direto, sem jargão desnecessário, com personalidade Xperiun (provocativo quando faz sentido, mas em doc é mais sóbrio que em /pbi-modelo-review).
 
-**Acentuação**: SEMPRE com todos os acentos (regra inviolável CLAUDE.md).
+**Acentuação**: SEMPRE com todos os acentos.
 
 **Excluir auto-date**: tabelas `LocalDateTable_*` e `DateTableTemplate_*` **não entram** em nenhum dos 5 arquivos. Se modelo tem essas tabelas, mencionar **só** no overview ("o modelo tem Auto Date/Time ligado, gerando 2 tabelas-fantasma ocultas — para auditar isso, rode `/pbi-modelo-review`").
 

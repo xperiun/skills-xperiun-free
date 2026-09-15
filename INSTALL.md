@@ -1,4 +1,4 @@
-# Instalação · Claude Skills Power BI
+# Instalação · Power BI Skills
 
 > 3 caminhos pra instalar as skills. Escolhe o que faz sentido pro seu setup.
 > **TL;DR:** se tem dúvida, vai de **caminho 1 (Claude.ai web · Free)** — funciona pra 95% dos casos.
@@ -31,7 +31,7 @@ A skill vai ler os `.tmdl` que estão dentro de `SemanticModel/definition/`. Tud
 
 ### Passo 1 · Baixa o `.zip`
 
-Vai na pasta [`claude-web/`](../claude-web/) do repo e baixa o `.zip` da skill que você quer instalar:
+Vai na pasta [`claude-web/`](claude-web/) do repo e baixa o `.zip` da skill que você quer instalar:
 
 | Skill | Arquivo |
 |---|---|
@@ -120,8 +120,8 @@ Igual Caminho 1 — abre conversa nova, escreve "audita esse modelo", anexa os `
 ### Passo 1 · Clona o repo (ou só essa pasta)
 
 ```bash
-git clone https://github.com/xperiun/claude-code-powerbi-skills.git
-cd claude-code-powerbi-skills
+git clone https://github.com/xperiun/powerbi-skills.git
+cd powerbi-skills
 ```
 
 ### Passo 2 · Copia as skills pra sua pasta de skills
@@ -200,7 +200,7 @@ A skill detecta a pasta `SemanticModel/` automaticamente, lê os `.tmdl` sozinha
 
 ### Code
 ```bash
-cd claude-code-powerbi-skills
+cd powerbi-skills
 git pull
 cp -r claude-code/* ~/.claude/skills/   # sobrescreve
 ```
@@ -262,9 +262,8 @@ Verifica que anexou:
 - 🩺 **Audita primeiro** → roda `/pbi-modelo-review` no seu modelo principal. Vê o score.
 - 📚 **Documenta depois** → `/pbi-doc` gera o handoff que você nunca teve tempo de fazer
 - ⚡ **Cria medidas no fluxo** → `/pbi-dax-create` quando quiser pular o editor pequeno do Power BI Desktop
-
-Dúvida? Issue no repo. Sugestão de skill nova? [Discussions](https://github.com/xperiun/claude-code-powerbi-skills/discussions).
+Dúvida? Issue no repo. Sugestão de skill nova? [Discussions](https://github.com/xperiun/powerbi-skills/discussions).
 
 ---
 
-*Construído com 🩵 pela equipe Xperiun. v0.1 · 2026-04*
+*Construído pela equipe Xperiun. v0.1.1 · 2026-09*

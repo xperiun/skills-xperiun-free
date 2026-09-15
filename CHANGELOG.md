@@ -1,11 +1,27 @@
 # Changelog
 
+Todas as mudanças notáveis nesse repo. Segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
+
+---
+
+## [0.1.1] · 2026-09-15
+
+### Mudado
+
+- Repo renomeado de `claude-code-powerbi-skills` pra `powerbi-skills` (o GitHub redireciona o endereço antigo)
+- Este repo passa a ser a fonte das skills: elas são mantidas aqui, e não mais sincronizadas de outro lugar
+- Links atualizados pro domínio `xperiun.com` e pro repo novo
+- Notas de manutenção interna removidas das `SKILL.md`
+
+### Adicionado
+
+- `scripts/build-zips.py` · regenera os `.zip` de `claude-web/` validando o formato que o Claude.ai aceita
+
+---
+
 ## 2026-04-29
 
-- Sync de `pbi-doc`, `pbi-modelo-review`, `pbi-dax-create` com a versão local do xperiun-os.
-
-
-Todas as mudanças notáveis nesse repo. Segue [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/).
+- Atualização de `pbi-doc`, `pbi-modelo-review` e `pbi-dax-create`.
 
 ---
 
@@ -35,10 +51,3 @@ Todas as mudanças notáveis nesse repo. Segue [Keep a Changelog](https://keepac
 - Suporte a 3 ambientes Claude: Web (Free funciona), Desktop, Code
 - Modo offline-friendly · skill detecta ambiente e adapta output
 - LGPD-compatível · arquivos `.tmdl` ficam locais, só o que você anexa vai pra rede
-
-### Roadmap
-
-**v0.2 (planejado):**
-- `pbi-dax-refactor` · refatora medidas existentes pro padrão SQLBI
-- `pbi-perf` · auditoria focada em performance
-- `pbi-from-csv` · gera modelo dimensional a partir de CSV/Excel

@@ -5,7 +5,7 @@ description: Cria medida DAX a partir de descrição em PT, respeitando o modelo
 
 # /pbi-dax-create — Criação de medida DAX
 
-> **📦 Distribuída publicamente:** [github.com/xperiun/claude-code-powerbi-skills](https://github.com/xperiun/claude-code-powerbi-skills) — pasta `claude-code/pbi-dax-create/` (skill nativa) + `claude-web/pbi-dax-create.zip` (upload no Claude.ai). Mudança aqui exige sincronizar lá: atualizar pasta + regenerar ZIP (Python `zipfile`, ver CLAUDE.md) + commit + bump CHANGELOG. Repo é open-source, leiame público — evitar referências internas (Xperiun-only) na SKILL.md.
+> **📦 Parte do [xperiun/powerbi-skills](https://github.com/xperiun/powerbi-skills):** pasta `claude-code/pbi-dax-create/` (Claude Code) + `claude-web/pbi-dax-create.zip` (upload no Claude.ai).
 
 Gera medidas DAX a partir de descrição em linguagem natural, **respeitando o modelo existente**:
 - Usa as colunas e tabelas que **realmente existem** (sem inventar)
@@ -147,7 +147,7 @@ Se aplicar:
 - Inserir a medida na seção correta (alfabética dentro do displayFolder)
 - Adicionar `description:` opcional se útil
 - Salvar
-- **Não commita** (regra inviolável git do CLAUDE.md raiz)
+- **Não commita**
 
 ## Outputs
 
@@ -177,7 +177,7 @@ Estilo Xperiun:
 - **Direto**: vai pra fórmula sem rodeio teórico
 - **Didático mas não condescendente**: explica linha-a-linha em PT, mas no nível de quem já sabe DAX
 - **Provocativo quando útil**: se o pedido tem antipattern óbvio, sinaliza ("você quer SUMX direto em fato de 5M linhas? Pode dar trabalho — alternativa: ...")
-- **PT-BR com todos os acentos** (regra inviolável CLAUDE.md)
+- **PT-BR com todos os acentos**
 
 Exemplos:
 
@@ -190,7 +190,7 @@ Exemplos:
 - **Lê** arquivos `.tmdl` (texto puro)
 - **Modo padrão**: zero modificação no projeto
 - **Modo aplicar**: edita só o `.tmdl` da tabela host, nunca toca outros
-- **NÃO commita** (segue regra inviolável git)
+- **NÃO commita**
 - **NÃO faz rede** — operação 100% local
 
 ## Tom dos avisos sobre risco
@@ -207,4 +207,4 @@ Quando aplicar direto:
 
 ## Versão
 
-`v0.1` — protótipo interno Xperiun OS. Faz parte do trio do lead magnet (`/pbi-modelo-review` · `/pbi-doc` · `/pbi-dax-create`).
+Distribuída no repo público `xperiun/powerbi-skills`.

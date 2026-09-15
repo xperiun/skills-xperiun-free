@@ -5,7 +5,7 @@ description: Audita modelo Power BI (PBIP) e gera relatório priorizado com anti
 
 # /pbi-modelo-review — Auditoria de modelo Power BI
 
-> **📦 Distribuída publicamente:** [github.com/xperiun/claude-code-powerbi-skills](https://github.com/xperiun/claude-code-powerbi-skills) — pasta `claude-code/pbi-modelo-review/` (skill nativa) + `claude-web/pbi-modelo-review.zip` (upload no Claude.ai). Mudança aqui exige sincronizar lá: atualizar pasta + regenerar ZIP (Python `zipfile`, ver CLAUDE.md) + commit + bump CHANGELOG. Repo é open-source, leiame público — evitar referências internas (Xperiun-only) na SKILL.md.
+> **📦 Parte do [xperiun/powerbi-skills](https://github.com/xperiun/powerbi-skills):** pasta `claude-code/pbi-modelo-review/` (Claude Code) + `claude-web/pbi-modelo-review.zip` (upload no Claude.ai).
 
 Audita um projeto Power BI (formato PBIP) e devolve relatório priorizado com:
 - Score geral (0–100)
@@ -204,16 +204,16 @@ Devolver mensagem curta no chat com:
 - **Lê** arquivos do projeto Power BI (TMDL puro, texto)
 - **Escreve** somente em `./_review/` (cria se não existe, sobrescreve se existe)
 - **NÃO toca** em `.SemanticModel/`, `.Report/`, ou qualquer arquivo binário
-- **NÃO commita** nada (segue regra inviolável git do CLAUDE.md raiz)
+- **NÃO commita** nada
 - **NÃO faz rede** — operação 100% local
 
 ## Tom do relatório
 
-Estilo Xperiun (declarado em `contexto/posicionamento.md`):
+Estilo Xperiun:
 - Direto, sem rodeio. Verdade > conveniência
 - Tom de "colega sênior revisando código", não consultor formal
 - Pode ser provocativo ("isso vai cobrar juros", "modelo plano é o anti-pattern #1")
-- PT-BR com **todos os acentos** (regra inviolável CLAUDE.md)
+- PT-BR com **todos os acentos**
 - Usar metáforas concretas ("vai virar ligação às 7h da manhã" > "pode causar erro em produção")
 
 Exemplos de **bom** vs **ruim**:
@@ -226,10 +226,10 @@ Exemplos de **bom** vs **ruim**:
 
 O relatório HTML tem footer fixo:
 - Linha: "Relatório gerado em 4 minutos por Claude Code + /pbi-modelo-review"
-- CTA: "Quero usar esse skill no meu Power BI →" (link placeholder por enquanto)
-- Meta: "XPERIUN · O Sistema Operacional dos Incomparáveis · pages.xperiun.com"
+- CTA: "Quero usar esse skill no meu Power BI →"
+- Meta: "XPERIUN · O Sistema Operacional dos Incomparáveis · xperiun.com"
 
-Branding é **sempre** Xperiun (não @leokarpa) — a skill faz parte do posicionamento institucional. Mesmo se o usuário rodar a skill no projeto dele, o footer mantém referência Xperiun (é nossa skill, ele só tá usando).
+Branding é **sempre** Xperiun: mesmo quando a skill roda no projeto de outra pessoa, o footer mantém a referência.
 
 ## Tempo típico
 
@@ -241,5 +241,4 @@ Avisar ao usuário se > 3min esperados.
 
 ## Versão atual
 
-`v0.1` — protótipo interno Xperiun OS. Ainda não distribuído publicamente.
-Quando estabilizar, vira pacote no repo `xperiun/claude-code-powerbi-skills` (lead magnet).
+Distribuída no repo público `xperiun/powerbi-skills`.

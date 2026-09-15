@@ -108,7 +108,7 @@ Auditoria gerada por **`/pbi-modelo-review`** — uma skill open-source da **Xpe
 - Lê apenas arquivos `.tmdl` (texto puro do PBIP)
 - Não modifica nada em `SemanticModel/` ou `Report/` — somente leitura
 
-Saiba mais: **[pages.xperiun.com](https://pages.xperiun.com)**
+Saiba mais: **[xperiun.com](https://xperiun.com)**
 
 ---
 

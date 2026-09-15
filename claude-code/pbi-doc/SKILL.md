@@ -5,7 +5,7 @@ description: Documenta projeto Power BI (PBIP) inteiro em markdown estruturado +
 
 # /pbi-doc — Documentação automática de Power BI
 
-> **📦 Distribuída publicamente:** [github.com/xperiun/claude-code-powerbi-skills](https://github.com/xperiun/claude-code-powerbi-skills) — pasta `claude-code/pbi-doc/` (skill nativa) + `claude-web/pbi-doc.zip` (upload no Claude.ai). Mudança aqui exige sincronizar lá: atualizar pasta + regenerar ZIP (Python `zipfile`, ver CLAUDE.md) + commit + bump CHANGELOG. Repo é open-source, leiame público — evitar referências internas (Xperiun-only) na SKILL.md.
+> **📦 Parte do [xperiun/powerbi-skills](https://github.com/xperiun/powerbi-skills):** pasta `claude-code/pbi-doc/` (Claude Code) + `claude-web/pbi-doc.zip` (upload no Claude.ai).
 
 Gera documentação completa de um projeto Power BI (formato PBIP) em duas formas:
 - **Markdown** versionável Git (5 arquivos: overview, tabelas, medidas, relacionamentos, dependências)
@@ -188,7 +188,7 @@ Estilo Xperiun:
 - **PT-BR direto, não robótico**. Em vez de "A tabela X possui Y colunas", escrever "Vendas — fato principal do modelo, 1 linha = 1 item de NFe, 12 colunas (5 chaves + 7 atributos)"
 - Pode usar metáforas concretas pra explicar DAX complexo
 - Manter tom de "colega sênior explicando o modelo pro novo membro do time"
-- PT-BR com **todos os acentos** (regra inviolável CLAUDE.md)
+- PT-BR com **todos os acentos**
 
 Exemplos de **bom** vs **ruim**:
 
@@ -200,7 +200,7 @@ Exemplos de **bom** vs **ruim**:
 
 - Rodar 2x **sobrescreve** `_docs/`
 - Não modifica nada em `.SemanticModel/` ou `.Report/` — somente leitura
-- Não commita nada (segue regra git inviolável CLAUDE.md)
+- Não commita nada
 - Operação 100% local — zero rede, zero XMLA
 
 ## Branding
@@ -208,7 +208,7 @@ Exemplos de **bom** vs **ruim**:
 HTML tem footer fixo:
 - "Doc gerada por Claude Code + /pbi-doc · Xperiun"
 - CTA: "Quero usar esse skill no meu Power BI →"
-- Meta: "XPERIUN · O Sistema Operacional dos Incomparáveis · pages.xperiun.com"
+- Meta: "XPERIUN · O Sistema Operacional dos Incomparáveis · xperiun.com"
 
 Branding sempre Xperiun.
 
@@ -222,4 +222,4 @@ Avisar se >5min esperados.
 
 ## Versão atual
 
-`v0.1` — protótipo interno Xperiun OS. Quando estabilizar, vira pacote no repo público `xperiun/claude-code-powerbi-skills` (lead magnet).
+Distribuída no repo público `xperiun/powerbi-skills`.
