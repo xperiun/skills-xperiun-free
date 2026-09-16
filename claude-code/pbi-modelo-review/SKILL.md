@@ -5,7 +5,7 @@ description: Audita modelo Power BI (PBIP) e gera relatório priorizado com anti
 
 # /pbi-modelo-review — Auditoria de modelo Power BI
 
-> **📦 Parte do [xperiun/powerbi-skills](https://github.com/xperiun/powerbi-skills):** pasta `claude-code/pbi-modelo-review/` (Claude Code) + `claude-web/pbi-modelo-review.zip` (upload no Claude.ai).
+> **📦 Parte do [xperiun/skills-xperiun-free](https://github.com/xperiun/skills-xperiun-free):** pasta `claude-code/pbi-modelo-review/` (Claude Code) + `claude-web/pbi-modelo-review.zip` (upload no Claude.ai).
 
 Audita um projeto Power BI (formato PBIP) e devolve relatório priorizado com:
 - Score geral (0–100)
@@ -241,4 +241,4 @@ Avisar ao usuário se > 3min esperados.
 
 ## Versão atual
 
-Distribuída no repo público `xperiun/powerbi-skills`.
+Distribuída no repo público `xperiun/skills-xperiun-free`.

@@ -5,7 +5,7 @@ description: Cria medida DAX a partir de descrição em PT, respeitando o modelo
 
 # /pbi-dax-create — Criação de medida DAX
 
-> **📦 Parte do [xperiun/powerbi-skills](https://github.com/xperiun/powerbi-skills):** pasta `claude-code/pbi-dax-create/` (Claude Code) + `claude-web/pbi-dax-create.zip` (upload no Claude.ai).
+> **📦 Parte do [xperiun/skills-xperiun-free](https://github.com/xperiun/skills-xperiun-free):** pasta `claude-code/pbi-dax-create/` (Claude Code) + `claude-web/pbi-dax-create.zip` (upload no Claude.ai).
 
 Gera medidas DAX a partir de descrição em linguagem natural, **respeitando o modelo existente**:
 - Usa as colunas e tabelas que **realmente existem** (sem inventar)
@@ -207,4 +207,4 @@ Quando aplicar direto:
 
 ## Versão
 
-Distribuída no repo público `xperiun/powerbi-skills`.
+Distribuída no repo público `xperiun/skills-xperiun-free`.

@@ -148,7 +148,7 @@ cp -r claude-code/* ~/.claude/skills/
 
 ## Contribuindo
 
-Issues e PRs bem-vindos. Mexeu em alguma skill de `claude-code/`? Rode `python scripts/build-zips.py` pra regenerar os `.zip` de `claude-web/`. Sugestões de novas skills via [GitHub Discussions](https://github.com/xperiun/powerbi-skills/discussions).
+Issues e PRs bem-vindos. Mexeu em alguma skill de `claude-code/`? Rode `python scripts/build-zips.py` pra regenerar os `.zip` de `claude-web/`. Sugestões de novas skills via [GitHub Discussions](https://github.com/xperiun/skills-xperiun-free/discussions).
 
 ---
 

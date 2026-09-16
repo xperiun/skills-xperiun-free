@@ -120,8 +120,8 @@ Igual Caminho 1 — abre conversa nova, escreve "audita esse modelo", anexa os `
 ### Passo 1 · Clona o repo (ou só essa pasta)
 
 ```bash
-git clone https://github.com/xperiun/powerbi-skills.git
-cd powerbi-skills
+git clone https://github.com/xperiun/skills-xperiun-free.git
+cd skills-xperiun-free
 ```
 
 ### Passo 2 · Copia as skills pra sua pasta de skills
@@ -200,7 +200,7 @@ A skill detecta a pasta `SemanticModel/` automaticamente, lê os `.tmdl` sozinha
 
 ### Code
 ```bash
-cd powerbi-skills
+cd skills-xperiun-free
 git pull
 cp -r claude-code/* ~/.claude/skills/   # sobrescreve
 ```
@@ -262,7 +262,7 @@ Verifica que anexou:
 - 🩺 **Audita primeiro** → roda `/pbi-modelo-review` no seu modelo principal. Vê o score.
 - 📚 **Documenta depois** → `/pbi-doc` gera o handoff que você nunca teve tempo de fazer
 - ⚡ **Cria medidas no fluxo** → `/pbi-dax-create` quando quiser pular o editor pequeno do Power BI Desktop
-Dúvida? Issue no repo. Sugestão de skill nova? [Discussions](https://github.com/xperiun/powerbi-skills/discussions).
+Dúvida? Issue no repo. Sugestão de skill nova? [Discussions](https://github.com/xperiun/skills-xperiun-free/discussions).
 
 ---
 
